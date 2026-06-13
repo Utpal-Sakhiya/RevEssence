@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RevEssence - India's first cleanser designed for hard water protection." />
+  <title>RevEssence | Hard Water Protection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#hero" aria-label="RevEssence home">
+        <img src="logo.jpeg" alt="RevEssence logo" class="brand-mark" />
+        <span class="brand-copy">
+          <strong>RevEssence</strong>
+          <small>Skin Science</small>
+        </span>
+      </a>
+      <nav class="topnav" aria-label="Primary">
+        <a href="#problem">Problem</a>
+        <a href="#products">Products</a>
+        <a href="#faq">FAQs</a>
+        <a href="#waitlist">Waitlist</a>
+      </nav>
+      <button class="ghost-button" id="openAdminButton" type="button">Admin</button>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Hard water skincare, reimagined for India</p>
+          <h1>India's first cleanser designed for hard water protection.</h1>
+          <p class="hero-text">Protect your skin barrier from hard water minerals while cleansing effectively. Clean skin should feel balanced, not stripped.</p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#waitlist">Join the Waitlist</a>
+            <a class="text-link" href="#products">Explore Products</a>
+          </div>
+          <div class="hero-badges">
+            <span>Hard Water Protection</span>
+            <span>Barrier Friendly</span>
+            <span>Indian Water Conditions</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="product-stack" id="heroProductStack"></div>
+        </div>
+      </section>
+
+      <section class="info-grid" id="problem">
+        <article class="panel reveal">
+          <p class="section-label">The Problem</p>
+          <h2>Most cleansers clean the surface, but ignore what hard water leaves behind.</h2>
+          <p>Hard water contains minerals like calcium and magnesium that can remain on the skin, contributing to dryness, tightness, irritation, and barrier disruption.</p>
+        </article>
+        <article class="panel panel-accent reveal">
+          <p class="section-label">The RevEssence Solution</p>
+          <h2>Our cleansers help bind and wash away hard water minerals during cleansing.</h2>
+          <p>That means skin feels cleaner, more comfortable, and better supported after every wash.</p>
+        </article>
+      </section>
+
+      <section class="products-section" id="products">
+        <div class="section-heading reveal">
+          <p class="section-label">Upcoming Products</p>
+          <h2>Built as a hard-water-focused system, not a single cleanser.</h2>
+          <p>Each formula is tuned for a different skin need while staying rooted in the same barrier-first philosophy.</p>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section class="why-section">
+        <div class="section-heading reveal">
+          <p class="section-label">Why RevEssence?</p>
+          <h2>Minimal outside, scientific inside.</h2>
+        </div>
+        <div class="why-grid">
+          <article class="why-card reveal">Hard Water Protection Focus</article>
+          <article class="why-card reveal">Skin Barrier Friendly Approach</article>
+          <article class="why-card reveal">Science-Backed Formulation Philosophy</article>
+          <article class="why-card reveal">Designed for Indian Water Conditions</article>
+        </div>
+      </section>
+
+      <section class="faq-section" id="faq">
+        <div class="section-heading reveal">
+          <p class="section-label">FAQs</p>
+          <h2>Quick answers for the waitlist.</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item reveal" open>
+            <summary>What is hard water?</summary>
+            <p>Water containing higher levels of minerals such as calcium and magnesium.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Why does hard water matter for skin?</summary>
+            <p>Mineral residue can contribute to dryness, tightness, and skin discomfort.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>How is RevEssence different?</summary>
+            <p>RevEssence focuses on helping remove hard water mineral residue while cleansing.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>When will products launch?</summary>
+            <p>Join the waitlist to get early access and launch updates.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="waitlist-section" id="waitlist">
+        <div class="waitlist-copy reveal">
+          <p class="section-label">Waitlist</p>
+          <h2>Be first to experience hard water protection.</h2>
+          <p>Leave your details to get launch updates, early access, and product announcements.</p>
+          <ul class="waitlist-points">
+            <li>Name</li>
+            <li>Email Address</li>
+            <li>Phone Number</li>
+            <li>Skin Type, optional</li>
+            <li>City, optional</li>
+          </ul>
+        </div>
+        <form class="waitlist-form reveal" id="waitlistForm">
+          <div class="field-row">
+            <label>
+              Name
+              <input type="text" name="name" autocomplete="name" required placeholder="Your name" />
+            </label>
+            <label>
+              Email Address
+              <input type="email" name="email" autocomplete="email" required placeholder="you@example.com" />
+            </label>
+          </div>
+          <div class="field-row">
+            <label>
+              Phone Number
+              <input type="tel" name="phone" autocomplete="tel" required placeholder="10-digit number" />
+            </label>
+            <label>
+              Skin Type (Optional)
+              <input type="text" name="skinType" placeholder="Dry, oily, combination..." />
+            </label>
+          </div>
+          <label>
+            City (Optional)
+            <input type="text" name="city" placeholder="Your city" />
+          </label>
+          <button class="primary-button form-button" type="submit">Join the Waitlist</button>
+          <p class="form-note" id="formNote">Your response is saved locally for the admin dashboard demo.</p>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <div class="admin-overlay" id="adminOverlay" aria-hidden="true">
+    <section class="admin-modal" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+      <div class="admin-header">
+        <div>
+          <p class="section-label">Admin Account</p>
+          <h2 id="adminTitle">Waitlist and Product Manager</h2>
+        </div>
+        <button class="ghost-button" id="closeAdminButton" type="button">Close</button>
+      </div>
+
+      <div id="loginView" class="admin-view">
+        <p>Use the demo credentials to view submissions and edit products.</p>
+        <form id="adminLoginForm" class="admin-login-form">
+          <label>
+            Username
+            <input type="text" id="adminUsername" autocomplete="username" required />
+          </label>
+          <label>
+            Password
+            <input type="password" id="adminPassword" autocomplete="current-password" required />
+          </label>
+          <button class="primary-button" type="submit">Log In</button>
+          <p class="form-note">Demo credentials: admin / revessence2026</p>
+        </form>
+      </div>
+
+      <div id="dashboardView" class="admin-view hidden">
+        <div class="dashboard-topline">
+          <div>
+            <strong id="leadCount">0</strong>
+            <span>Waitlist Entries</span>
+          </div>
+          <div>
+            <strong id="productCount">0</strong>
+            <span>Products</span>
+          </div>
+          <button class="ghost-button" id="logoutButton" type="button">Log Out</button>
+        </div>
+
+        <div class="dashboard-grid">
+          <section class="dashboard-card">
+            <div class="card-header">
+              <h3>Lead Data</h3>
+              <button class="ghost-button small" id="exportLeadsButton" type="button">Export JSON</button>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Skin Type</th>
+                    <th>City</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="leadTableBody"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="dashboard-card">
+            <div class="card-header">
+              <h3>Edit Product List</h3>
+              <button class="ghost-button small" id="addProductButton" type="button">Add Product</button>
+            </div>
+            <div id="productEditor" class="product-editor"></div>
+          </section>
+        </div>
+
+        <div class="admin-actions">
+          <button class="ghost-button" id="resetDemoButton" type="button">Reset Demo Data</button>
+          <button class="primary-button" id="saveProductsButton" type="button">Save Products</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <template id="productCardTemplate">
+    <article class="product-card">
+      <div class="product-image-wrap">
+        <img class="product-image" alt="" />
+      </div>
+      <div class="product-copy">
+        <p class="product-kicker"></p>
+        <h3></h3>
+        <p class="product-description"></p>
+      </div>
+    </article>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
